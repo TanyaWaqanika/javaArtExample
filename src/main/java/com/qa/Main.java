@@ -52,7 +52,7 @@ public class Main {
         eBook bible = new eBook("Christ Himself","the Bible","English",0,"A lifetime");
         System.out.println(bible);
 
-        eBook harrypotter = new eBook("JK Terfling","Harry Potter and the Twitter of Transphobia","English",2024,"TOO LONG");
+        eBook harrypotter = new eBook("JK Terfling","Harry Potter and the Terrible Tweets of Transphobia","English",2024,"TOO LONG");
         System.out.println(harrypotter);
 
         eBook percyjackson = new eBook("Rick Riordan","Percy Jackson","English",1500,"7 hours");
