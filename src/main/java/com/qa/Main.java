@@ -79,7 +79,7 @@ public class Main {
 //      Unpacks each element from books array and separates them with "--------------"
 //      'item' refers to each element(object) in books array
         for (Art item: books){
-            System.out.println("--------------------------------------");
+            System.out.println("*--------------------------------------------------------*");
             System.out.println(item);
         }
 

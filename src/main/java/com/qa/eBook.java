@@ -15,7 +15,7 @@ public class eBook extends Art {
     }
 
     public void getSales(){
-        System.out.println("Buy more ebooks!");
+        System.out.println("\nBuy more ebooks!");
     }
 
     @Override

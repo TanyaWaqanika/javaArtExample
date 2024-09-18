@@ -3,12 +3,12 @@ package com.qa;
 public class Radio extends Art implements Music, Podcast {
     @Override
     public void playSong() {
-        System.out.println("It's too loud!");
+        System.out.println("\nIt's too loud!");
     }
 
     @Override
     public void listenToNarrator() {
-        System.out.println("What's he saying?");
+        System.out.println("\nWhat's he saying?");
     }
 
     @Override
