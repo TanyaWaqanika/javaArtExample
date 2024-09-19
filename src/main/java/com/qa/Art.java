@@ -95,15 +95,6 @@ abstract class Art {
     }
 
 
-    public String writeBook(String title) throws plagiarisedBook {
-        if (title.equals("Harry Potter")) {
-            throw new plagiarisedBook("It's already been done");
-        } else {
-            return title;
-        }
-    }
-
-
 
 
 //  ABSTRACT METHOD
