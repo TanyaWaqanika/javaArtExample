@@ -81,25 +81,24 @@ public class Main {
         for (Art item: books) {
             System.out.println("*--------------------------------------------------------*");
             System.out.println(item);
+        }
 
+//               Instantiate Book obj to test plagiarisedBookException and try-cause-finally block
+        Book newBook = new Book();
 
-//          Instantiate Book obj to test plagiarisedBookException and try-cause-finally block
-            Book newBook = new Book();
-
-            try {
+        try {
 //               User attempts to make new books 'Harry Potter' and 'Percy Jackson'
-                newBook.writeBook("Harry Potter");
-                newBook.writeBook("Percy Jackson");
-            } catch (plagiarisedBookException e) {
+            newBook.writeBook("Harry Potter");
+            newBook.writeBook("Percy Jackson");
+        } catch (plagiarisedBookException e) {
 //                Handles plagiarisedBook Exception and prints string defined in Book class, writeBook method, ln 32
-                System.out.println("\nTry again! " + e.getMessage());
-            } finally {
+            System.out.println("\nTry again! " + e.getMessage());
+        } finally {
 //                This will display after both cases have been handled
-                System.out.println("\nWhat do you want to do next?");
-            }
+            System.out.println("\nWhat do you want to do next?");
+        }
 
-            System.out.println(newBook.writeBook("Percy Jackson"));
+        System.out.println(newBook.writeBook("Percy Jackson"));
 //
-        }
-        }
+    }
 }
