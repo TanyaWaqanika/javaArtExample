@@ -1,11 +1,11 @@
 package com.qa;
 
 public class Main {
-    public static void main(String[] args) throws plagiarisedBook {
+    public static void main(String[] args) throws plagiarisedBookException {
         visual();
     }
 
-    public static void visual() throws plagiarisedBook {
+    public static void visual() throws plagiarisedBookException {
 //        instantiate new obj medea from Book class using 0 param constructor
 //        Book method 'obj.setMethod' must be called to initialise obj data
 
@@ -83,13 +83,14 @@ public class Main {
             System.out.println(item);
 
 
+//          Instantiate Book obj to test plagiarisedBookException and try-cause-finally block
             Book newBook = new Book();
 
             try {
 //               User attempts to make new books 'Harry Potter' and 'Percy Jackson'
                 newBook.writeBook("Harry Potter");
                 newBook.writeBook("Percy Jackson");
-            } catch (plagiarisedBook e) {
+            } catch (plagiarisedBookException e) {
 //                Handles plagiarisedBook Exception and prints string defined in Book class, writeBook method, ln 32
                 System.out.println("\nTry again! " + e.getMessage());
             } finally {
@@ -98,7 +99,7 @@ public class Main {
             }
 
             System.out.println(newBook.writeBook("Percy Jackson"));
-//            System.out.println(newBook.writeBook("Harry Potter"));
+//
         }
         }
 }

@@ -25,13 +25,13 @@ public class Book extends Art {
 
 
 // Method to check if a book called Harry Potter has already been written
-    public String writeBook(String title) throws plagiarisedBook {
+    public String writeBook(String title) throws plagiarisedBookException {
         if (title.equals("Harry Potter")) {
 
 //          Throws a custom plagiarisedBook exception if Harry Potter is used
-            throw new plagiarisedBook("It's already been done");
+            throw new plagiarisedBookException("It's already been done");
         } else {
-//          Prints message to user if newBook is successful
+//          Prints message to user if writeBook is successful
             return "Nice, you wrote a brand new book called " + title;
         }
     }

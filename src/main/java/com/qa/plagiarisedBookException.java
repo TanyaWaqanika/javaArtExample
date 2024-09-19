@@ -1,10 +1,10 @@
 package com.qa;
 
 //subclass plagiarisedBook inherits from Exception superclass
-public class plagiarisedBook extends Exception {
+public class plagiarisedBookException extends Exception {
 
 //    Custom exception created for new books that have been plagiarised using Override/Super constructor
-    public plagiarisedBook(String message) {
+    public plagiarisedBookException(String message) {
         super(message);
     }
 }
