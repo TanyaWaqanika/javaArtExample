@@ -20,7 +20,7 @@ abstract class Art {
         this.countryMade = countryMade;
     }
 
-//   Book param specific constructor
+    //   Book param specific constructor
     public Art(String author, String title, String language, int yearMade) {
         this.author = author;
         this.title = title;
@@ -35,6 +35,7 @@ abstract class Art {
     public int getYearMade() {
         return yearMade;
     }
+
     public void setYearMade(int yearMade) {
         this.yearMade = yearMade;
     }
@@ -43,6 +44,7 @@ abstract class Art {
     public String getAuthor() {
         return author;
     }
+
     public void setAuthor(String author) {
         this.author = author;
     }
@@ -51,6 +53,7 @@ abstract class Art {
     public String getCreator() {
         return creator;
     }
+
     public void setCreator(String creator) {
         this.creator = creator;
     }
@@ -59,6 +62,7 @@ abstract class Art {
     public String getGenre() {
         return genre;
     }
+
     public void setGenre(String genre) {
         this.genre = genre;
     }
@@ -67,6 +71,7 @@ abstract class Art {
     public String getTitle() {
         return title;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -75,6 +80,7 @@ abstract class Art {
     public String getLanguage() {
         return language;
     }
+
     public void setLanguage(String language) {
         this.language = language;
     }
@@ -83,9 +89,22 @@ abstract class Art {
     public String getCountryMade() {
         return countryMade;
     }
+
     public void setCountryMade(String countryMade) {
         this.countryMade = countryMade;
     }
+
+
+    public String writeBook(String title) throws plagiarisedBook {
+        if (title.equals("Harry Potter")) {
+            throw new plagiarisedBook("It's already been done");
+        } else {
+            return title;
+        }
+    }
+
+
+
 
 //  ABSTRACT METHOD
 //  Must be inside abstract class and DOES NOT HAVE A BODY

@@ -78,11 +78,20 @@ public class Main {
 
 //      Unpacks each element from books array and separates them with "--------------"
 //      'item' refers to each element(object) in books array
-        for (Art item: books){
+        for (Art item: books) {
             System.out.println("*--------------------------------------------------------*");
             System.out.println(item);
+
+
+            Book newBook = new Book();
+            try {
+                newBook.writeBook("Harry Potter");
+                newBook.writeBook("Percy Jackson");
+            } catch (plagiarisedBook e) {
+                System.out.println("\nTry again! " + e.getMessage());
+            } finally {
+                System.out.println("Skibidi");
+            }
         }
-
-    }
-
+        }
 }
